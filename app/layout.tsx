@@ -1,5 +1,6 @@
 import "@patternfly/react-core/dist/styles/base.css";
-import "@patternfly/react-styles/css/utilities/Flex/flex.css";
+import "@patternfly/react-styles/css/utilities/Spacing/spacing.css";
+import "@patternfly/virtual-assistant/dist/css/main.css";
 import type { Metadata } from "next";
 import { PageWrapper } from "../components/page-wrapper";
 import "./globals.css";

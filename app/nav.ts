@@ -19,4 +19,29 @@ export const routes: NavConfig = [
     label: "About Me",
     path: "/about-me",
   },
+  {
+    label: "Demos",
+    routes: [
+      {
+        label: "Overview",
+        path: "/demos",
+      },
+      {
+        label: "Groupi DateTime Picker",
+        path: "/demos/datetime-picker",
+      },
+      {
+        label: "Chatbot",
+        path: "/demos/chatbot",
+      },
+      {
+        label: "Tic-Tac-Toe",
+        path: "/demos/tic-tac-toe",
+      },
+      {
+        label: "Store Page",
+        path: "/demos/store-page",
+      },
+    ],
+  },
 ];

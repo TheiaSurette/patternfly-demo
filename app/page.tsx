@@ -18,8 +18,8 @@ export default function Home() {
         design system.
       </Content>
       <Content component={ContentVariants.p} isEditorial>
-        It's built with Next.js and PatternFly React. You can find the source
-        code{" "}
+        It&apos;s built with Next.js and PatternFly React. You can find the
+        source code{" "}
         <Link href="https://github.com/TheiaSurette/patternfly-demo">here</Link>
       </Content>
       <Content component={ContentVariants.p} isEditorial>

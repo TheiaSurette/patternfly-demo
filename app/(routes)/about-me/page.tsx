@@ -32,7 +32,7 @@ export default function AboutMe() {
         </FlexItem>
         <FlexItem>
           <Title headingLevel="h1" size="4xl">
-            Hi! I'm{" "}
+            Hi! I&apos;m{" "}
             <Link target="_blank" href="https://tsurette.com">
               Theia.
             </Link>{" "}
@@ -42,7 +42,7 @@ export default function AboutMe() {
       </Flex>
 
       <Content component={ContentVariants.p} isEditorial>
-        I'm a full-stack engineer with a passion for designing and building
+        I&apos;m a full-stack engineer with a passion for designing and building
         accessible, user-friendly applications that solve real-world problems.
       </Content>
 
@@ -74,8 +74,8 @@ export default function AboutMe() {
       <Flex alignItems={{ default: "alignItemsFlexStart" }}>
         <FlexItem>
           <Title headingLevel="h3">
-            When I'm not coding, I have a number of hobbies that keep me busy,
-            like:
+            When I&apos;m not coding, I have a number of hobbies that keep me
+            busy, like:
           </Title>
           <Content component={ContentVariants.ul} isEditorial>
             <li>Rock Climbing</li>

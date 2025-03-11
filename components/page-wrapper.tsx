@@ -15,7 +15,6 @@ import {
   Page,
   PageSidebar,
   PageSidebarBody,
-  SkipToContent,
 } from "@patternfly/react-core";
 import { BarsIcon } from "@patternfly/react-icons";
 import Image from "next/image";
@@ -44,14 +43,16 @@ export function PageWrapper({
           />
         </MastheadToggle>
         <MastheadBrand data-codemods>
-          <MastheadLogo data-codemods>
-            <Image
-              src="/images/theia-logo.svg"
-              alt="Theia Surette"
-              width={172}
-              height={40}
-            />
-          </MastheadLogo>
+          <Link href="/">
+            <MastheadLogo data-codemods>
+              <Image
+                src="/images/theia-logo.svg"
+                alt="Theia Surette"
+                width={172}
+                height={40}
+              />
+            </MastheadLogo>
+          </Link>
         </MastheadBrand>
       </MastheadMain>
     </Masthead>
@@ -100,25 +101,12 @@ export function PageWrapper({
     </PageSidebar>
   );
 
-  const PageSkipToContent = (
-    <SkipToContent
-      onClick={(event) => {
-        event.preventDefault();
-        const primaryContentContainer = document.getElementById(pageId);
-        primaryContentContainer?.focus();
-      }}
-      href={`#${pageId}`}
-    >
-      Skip to Content
-    </SkipToContent>
-  );
-
   return (
     <Page
       mainContainerId={pageId}
       masthead={masthead}
       sidebar={sidebarOpen && Sidebar}
-      skipToContent={PageSkipToContent}
+      isContentFilled
     >
       {children}
     </Page>
