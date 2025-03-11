@@ -102,7 +102,7 @@ export default function StorePage() {
         <ModalHeader>
           <Flex
             direction={{ default: "row" }}
-            alignItems={{ default: "center" }}
+            alignItems={{ default: "alignItemsCenter" }}
             gap={{ default: "gapLg" }}
           >
             <FlexItem>
