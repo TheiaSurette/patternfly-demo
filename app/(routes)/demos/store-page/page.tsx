@@ -34,10 +34,9 @@ export default function StorePage() {
   useEffect(() => {
     const fetchItems = async () => {
       const lorem = (await getRandomLorem())[0].split(" ");
-      const items: IStoreItem[] = [];
-      for (const _ of Array.from({ length: 15 })) {
+      const items: IStoreItem[] = Array.from({ length: 15 }).map(() => {
         const index = Math.floor(Math.random() * lorem.length - 15);
-        items.push({
+        return {
           name:
             lorem[Math.floor(Math.random() * lorem.length)] +
             " " +
@@ -48,14 +47,14 @@ export default function StorePage() {
           price: Math.floor(Math.random() * 100) + 1,
           quantity: 1,
           image: `https://picsum.photos/200/300?random=${Math.random() * 100}`,
-        });
-      }
+        };
+      });
       setStoreItems(items);
     };
     fetchItems();
   }, []);
 
-  const handleModalToggle = (_event: KeyboardEvent | React.MouseEvent) => {
+  const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen);
   };
 

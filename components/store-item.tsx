@@ -1,5 +1,4 @@
 "use client";
-import { getRandomLorem } from "@/actions/lorem";
 import {
   Button,
   Card,
@@ -15,7 +14,6 @@ import {
 } from "@patternfly/react-core";
 import { CartPlusIcon } from "@patternfly/react-icons";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export interface IStoreItem {
   name: string;
