@@ -80,8 +80,10 @@ export function StoreItem({
                 onClick={() => {
                   handleAddToCart({
                     name,
-                    price: parseFloat(price),
+                    price: price,
                     quantity: 1,
+                    description,
+                    image: item.image,
                   });
                 }}
                 icon={<CartPlusIcon />}
